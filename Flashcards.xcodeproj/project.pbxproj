@@ -12,6 +12,8 @@
 		D6F62291212307CF00A8C1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F62290212307CF00A8C1C3 /* Assets.xcassets */; };
 		D6F62294212307CF00A8C1C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F62292212307CF00A8C1C3 /* LaunchScreen.storyboard */; };
 		D6F6229E21230E4A00A8C1C3 /* Flashcards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6F6229C21230E4900A8C1C3 /* Flashcards.xcdatamodeld */; };
+		D6F622A02123110100A8C1C3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6229F2123110100A8C1C3 /* CoreDataStack.swift */; };
+		D6F622A22123117600A8C1C3 /* Flashcard+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F622A12123117600A8C1C3 /* Flashcard+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D6F62293212307CF00A8C1C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6F62295212307CF00A8C1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6F6229D21230E4900A8C1C3 /* Flashcards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flashcards.xcdatamodel; sourceTree = "<group>"; };
+		D6F6229F2123110100A8C1C3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D6F622A12123117600A8C1C3 /* Flashcard+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flashcard+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				D6F6229C21230E4900A8C1C3 /* Flashcards.xcdatamodeld */,
+				D6F6229F2123110100A8C1C3 /* CoreDataStack.swift */,
+				D6F622A12123117600A8C1C3 /* Flashcard+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F622A02123110100A8C1C3 /* CoreDataStack.swift in Sources */,
 				D6F6229E21230E4A00A8C1C3 /* Flashcards.xcdatamodeld in Sources */,
+				D6F622A22123117600A8C1C3 /* Flashcard+Convenience.swift in Sources */,
 				D6F6228A212307CC00A8C1C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
