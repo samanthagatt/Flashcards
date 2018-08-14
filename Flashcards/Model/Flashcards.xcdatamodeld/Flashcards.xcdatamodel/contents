@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Deck" representedClassName="Deck" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="position" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="flashcards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Flashcard" inverseName="deck" inverseEntity="Flashcard" syncable="YES"/>
+    </entity>
+    <entity name="Flashcard" representedClassName="Flashcard" syncable="YES" codeGenerationType="class">
+        <attribute name="firstSide" attributeType="String" syncable="YES"/>
+        <attribute name="initialTimestamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="position" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="secondSide" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedTimestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="deck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="flashcards" inverseEntity="Deck" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Flashcard" positionX="-54" positionY="-9" width="128" height="133"/>
+        <element name="Deck" positionX="-270" positionY="30" width="128" height="103"/>
+    </elements>
+</model>
